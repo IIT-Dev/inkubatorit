@@ -1,0 +1,896 @@
+body{
+    margin:0;
+    padding:0;
+    background: url('../images/bg.jpg');
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+table td{
+    vertical-align: top;
+    padding: 0;
+}
+table,td,tr{
+    border-collapse: collapse;
+}
+
+#main-container{
+    margin:0 auto;
+    width: 960px;
+    padding-top: 20px;
+    padding-bottom:40px;
+}
+
+#content-con{
+    width:960px;
+    background-color: #EFEFEF;
+    border-radius: 20px 20px 20px;
+    -webkit-border-radius: 20px 20px 20px;
+    box-shadow:5px 5px 5px #898989;
+}
+
+#content-wrap{
+    min-height:511px;
+}
+
+#content-nav{
+    height:120px;
+    position: relative;
+    bottom:21px;
+    width: 800px;
+    margin-left:110px;
+}
+
+.nav-item{
+    float:left;
+    width: 160px;
+    height:120px;
+    overflow: hidden;
+    background-position: -80px 82px;
+    background-repeat: no-repeat;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.nav-active{
+    cursor: default;
+}
+
+.nav-item:hover,
+.nav-active{
+    background-position: 0 0;
+}
+
+#nav-home{
+    background-image: url('../images/home.png');
+}
+
+#nav-about{
+    background-image: url('../images/about.png');
+}
+#nav-community{
+    background-image: url('../images/komunitas.png');
+}
+#nav-portfolio{
+    background-image: url('../images/portfolio.png');
+}
+#nav-blog{
+    background-image: url('../images/contact.png');
+}
+
+#content-wrap-shadow{
+    width:937px;
+    margin:0 auto;
+    height: 29px;
+    margin-top:-50px;
+    background: url('../images/content-shadow.png') no-repeat;
+}
+
+#footer-con{
+    height: 50px;
+    margin-top:20px;
+}
+
+.footer-logo{
+    margin-left: 20px;
+    float:right;
+}
+
+.footer-logo-tweet{
+    margin-left: 20px;
+    float:left;
+}
+/******* CONTENT ********/
+
+.content{
+    min-height:490px;
+    width:850px;
+    margin-left:80px;    
+    background: url('../images/content-bg.png') no-repeat 570px 60px;
+}
+
+
+.left-con{
+    background: url('../images/left-bg.png') no-repeat;
+    width: 120px;
+    height: 430px;
+    margin-right: 45px;
+}
+
+.center-con{
+    width: 500px;
+    min-height: 430px;
+}
+
+.center-separator{
+    height: 45px;
+    width:inherit;
+}
+
+.content-title{
+    height: 50px;
+    text-align: left;
+}
+
+.content-main{
+    text-align: justify;
+    font-family: "Arial";
+    font-size: 0.9em;
+    letter-spacing: 0.1em;
+    line-height: 1.4em;
+    width: inherit;
+}
+
+.content-main p{
+    margin: 0;
+    padding: 0 20px 0 0;
+    margin-bottom: 15px;
+    
+}
+
+.content-main ul,
+.content-main ol{
+    padding-right: 20px;
+}
+.content-main li{
+    
+}
+
+.right-con{
+    width: 180px;
+    height: 430px;
+}
+
+/**** HOME ****/
+#home-con{
+    background: none;
+}
+#iit-wrapper{
+    padding-left:300px;
+    padding-top:227px;
+    text-align: left;
+}
+
+/*** ABOUT ***/
+#about-wrap{
+    padding-top: 60px;
+}
+.about-title{
+    font-size: 20px;
+}
+.about-img{
+    margin-bottom: 10px;
+}
+/** apa tau **/
+.apatauform {  /* set width in form, not fieldset (still takes up more room w/ fieldset width */
+  font:100% verdana,arial,sans-serif;
+  margin: 0;
+  padding: 0;
+  min-width: 500px;
+  max-width: 600px;
+  width: 560px; 
+}
+
+.apatauform fieldset {
+  border-color: #000;
+  border-width: 1px;
+  border-style: solid;
+  padding: 10px;        /* padding in fieldset support spotty in IE */
+  margin: 0;
+}
+
+.apatauformfieldset legend {
+	font-size:1.1em; /* bump up legend font size, not too large or it'll overwrite border on left */
+                       /* be careful with padding, it'll shift the nice offset on top of border  */
+}
+
+.apatauform label { 
+	display: block;  /* block float the labels to left column, set a width */
+	float: left; 
+	width: 125px; 
+	padding: 0; 
+	margin: 5px 5px 5px 0; /* set top margin same as form input - textarea etc. elements */
+	text-align: left; 
+}
+
+.apatauform fieldset label:first-letter { /* use first-letter pseudo-class to underline accesskey, note that */
+	text-decoration:underline;    /* Firefox 1.07 WIN and Explorer 5.2 Mac don't support first-letter */
+                                    /* pseudo-class on legend elements, but do support it on label elements */
+                                    /* we instead underline first letter on each label element and accesskey */
+                                    /* each input. doing only legends would  lessens cognitive load */
+                                   /* opera breaks after first letter underlined legends but not labels */
+}
+.apatauform input[type="text"]{
+	/* display: inline; inline display must not be set or will hide submit buttons in IE 5x mac */
+	width:330px;      /* set width of form elements to auto-size, otherwise watch for wrap on resize */
+	margin:5px 5px 5px 10px; /* set margin on left of form elements rather than right of
+                              label aligns textarea better in IE */
+}
+.apatauform input[type="file"]{
+	/* display: inline; inline display must not be set or will hide submit buttons in IE 5x mac */
+	width:330px;      /* set width of form elements to auto-size, otherwise watch for wrap on resize */
+	margin:5px 5px 5px 10px; /* set margin on left of form elements rather than right of
+                              label aligns textarea better in IE */
+}
+.apatauform textarea{
+	/* display: inline; inline display must not be set or will hide submit buttons in IE 5x mac */
+	width:330px;      /* set width of form elements to auto-size, otherwise watch for wrap on resize */
+	margin:5px 5px 5px 10px; /* set margin on left of form elements rather than right of
+                              label aligns textarea better in IE */
+}
+.apatauform input#reset {
+	margin-left:0px; /* set margin-left back to zero on reset button (set above) */
+}
+.apatauform small {
+	display: block;
+	margin: 0 0 5px 160px; /* instructions/comments left margin set to align w/ right column inputs */
+	padding: 1px 3px;
+	font-size: 88%;
+}
+.apatauform .required{font-weight:bold;} /* uses class instead of div, more efficient */
+
+
+#apatauformsubmit{
+	/* display: inline; inline display must not be set or will hide submit buttons in IE 5x mac */
+	width:100px;      /* set width of form elements to auto-size, otherwise watch for wrap on resize */
+	margin:0px; /* set margin on left of form elements rather than right of
+                              label aligns textarea better in IE */
+        text-align: center;
+        margin-left: 225px;
+        margin-top: 10px;
+}
+/*** COMMUNITY ***/
+#community-wrap{
+    padding-top: 60px;
+}
+
+.community-img{
+    margin-bottom: 30px;
+}
+
+/*** PORTFOLIO ***/
+#portfolio-wrap {
+    padding-top: 60px;
+}
+
+#portfolio-wrap .content-title > .create, #portfolio-wrap .content-title a {
+    font-size: 20pt;
+    color: rgb(251, 193, 82);
+    font-family: "Arial";
+    font-weight: lighter;
+}
+
+#portfolio-wrap .content-title a:hover {
+    color: blue;
+}
+
+#portfolio-wrap .years > a {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 20pt;
+    color: rgb(247, 217, 139);
+}
+
+#portfolio-wrap .years > a.active {
+    color: rgb(242, 182, 27);
+}
+
+#portfolio-wrap .backward, #portfolio-wrap .forward {
+    position: absolute;
+    width: 15px;
+    height: 31px;
+    text-align: center;
+    top : 135px;
+    display: block;
+    z-index: 2;
+}
+#portfolio-wrap .backward {
+    left: -10px;
+}
+
+#portfolio-wrap .forward {
+    left: 495px;
+}
+
+#portfolio-wrap .content-main {
+    position: relative;
+}
+
+#portfolio-wrap .items {
+    position: relative;
+}
+
+#portfolio-wrap .items > div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 300px;
+    width : 500px;
+    display: none;
+}
+
+#portfolio-wrap .items > div > div {
+    height: 300px;
+    width : 240px;
+    margin-left: 20px;
+    float: left;
+}
+
+#portfolio-wrap .items > div > div > img {
+    display: block;
+    width: 240px;
+    height: 300px;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    z-index: 0;
+}
+
+#portfolio-wrap .items > div > div > .front {
+    height: 300px;
+    width : 240px;
+    background: rgba(121, 121, 121, 0.5);
+    top: 0;
+    z-index: 1;
+    position: absolute;
+}
+
+#portfolio-wrap .items > div > div > .front > .title {
+    height: 40px;
+    vertical-align: middle;
+    padding-top: 15px;
+    font-size: 20pt;
+    color: rgb(244, 244, 244);
+    text-align: center;
+}
+
+#portfolio-wrap .items > div > div > .front > .title .admin {
+    font-size: 8pt;
+}
+
+#portfolio-wrap .items > div > div > .front > .title .admin a {
+    color: rgb(244, 244, 244);
+}
+
+#portfolio-wrap .items > div > div:hover > .front > .title .admin a {
+    color: rgb(242, 182, 27);
+}
+
+#portfolio-wrap .items > div > div > .front > .title .admin a:hover {
+    color: blue;
+}
+
+#portfolio-wrap .items > div > div:hover > .front {
+    background-color: rgba(242, 182, 27, 0.5);
+    cursor: pointer;
+    z-index: 10;
+}
+
+#portfolio-wrap .items > div > div:hover > .front > .title {
+    color: rgb(242, 182, 27);
+    background-color: rgba(244, 244, 244, 0.75);
+}
+
+#portfolio-wrap .items > div > div:first-child {
+    margin-left: 0px;
+}
+
+#popup {
+    width: 730px;
+    height: 400px;
+    background-color: rgb(244,244,244);
+    position: absolute;
+    border: solid 1px #fff;
+    border-radius : 20px;
+}
+#popup > .close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: block;
+    cursor: pointer;
+}
+
+#popup > .slideshow {
+    position: relative;
+    float: left;
+    margin-left: 50px;
+    margin-top: 50px;
+    width: 300px;
+    height: 300px;
+}
+
+#popup > .slideshow > .items {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+
+#popup > .slideshow > .items > img{
+    display: none;
+}
+
+#popup > .slideshow > .left, #popup > .slideshow > .right {
+    display: block;
+    position: absolute;
+    top : 135px;
+    cursor: pointer;
+}
+
+#popup > .slideshow > .left {
+    left: 8px;
+}
+
+#popup > .slideshow > .right {
+    right: 8px;
+}
+
+#popup > .text {
+    position: relative;
+    width: 320px;
+    height: 300px;
+    float: left;
+    margin-top: 50px;
+    margin-left: 20px;
+    text-align: left;
+}
+
+#popup > .text > .title {
+    color: rgb(242, 182, 27);
+    font-family: "Arial";
+    font-size: 24pt;
+    text-align: justify;
+    height: 30px;
+}
+
+#popup > .text > .description {
+    text-align: justify;
+    font-family: "Arial";
+    font-size: 0.9em;
+    letter-spacing: 0.1em;
+    line-height: 1.4em;
+    margin-top: 10px;
+    height: 260px;
+    padding-right: 8px
+}
+
+/*** CONTACT ***/
+#contact-wrap{
+    padding-top: 60px;
+}
+
+/*** BLOG ***/    
+#blog-con{
+    background: none;
+}
+#blog-wrap{
+    padding-top: 60px;
+}
+.blog-center-con{
+    width: 650px;
+    text-align: left;
+    margin:0;
+    padding:0 22px 0 0;
+    border-right:1px solid #ddd;
+}
+.blog-search{
+    margin : 5px;
+    width : 80px;
+}
+.blog-admin-add{
+    width : 100px;
+    text-align: right;
+    margin-left:500px;
+    float : left;
+}
+.blog-separator{
+    height: 120px;
+    width:inherit;
+}
+.blog-title{
+    margin-top : 20px;
+    height: 50px;
+    text-align: left;
+}
+.read-blog-content{
+    margin-top: 20px;
+    font-size: 0.9em;
+    letter-spacing: 0.1em;
+    line-height: 1.4em;
+    width: inherit;
+}
+.read-blog-content-main p{
+    margin: 0;
+    padding: 0 20px 0 0;
+    margin-bottom: 15px;
+    text-align:justify;
+}
+.read-blog-content-header{
+    float:left;
+    margin:0;
+    width:inherit;
+}
+.read-blog-content-thumb{
+    float:right;
+    margin:0;
+    height : 210px;
+    max-height: 210px;
+    width: 310px;
+    max-width: 310px;
+}
+.read-blog-img{
+    width: 250px;
+    height : 200px;
+}
+.read-blog-info{font-size:11px;line-height:18px;float:left;color:#444;background:inherit;width:inherit}
+.read-blog-content-title{ float:left; width:inherit}
+.read-blog-content-title h1{font-size:20px;font-weight:500;line-height:90%;font-family: 'Droid Sans','Helvetica Neue','helvetica','arial','sans-serif'}
+.read-blog-text-excerpt-1{
+    margin:0;font-size:13px;line-height:18px;padding:0;width:inherit;float:left;text-align:justify;font-family:"Helvetica Neue",'Helvetica','Arial','Sans-Serif';
+}
+.read-blog-text-excerpt-2{
+    font-size:13px;line-height:18px;text-align:justify;font-family:"Helvetica Neue",'Helvetica','Arial','Sans-Serif';
+}
+.read-blog-pagination{
+    width: inherit;
+    text-align: center;
+    margin-top: 10px;
+}
+.blog-content{
+    width: inherit;
+}
+.addblog-content{
+    padding : 5px;
+    height : 425px;
+}
+.blog-content-thumb{
+    clear:both;
+    display:block;
+    float:left;
+    margin:2px 0 15px 0;
+    width: 140px;
+    height : 140px;
+    max-height: 140px;
+    max-width: 140px;
+    border-style: dashed;
+    border-color: white;
+}
+.blog-img{
+    width: 140px;
+    height : 140px;
+    max-height: 140px;
+    max-width: 140px;
+}
+.blog-info{margin-left: 10px; font-size:11px;line-height:18px;float:left;color:#444;width:484px;background:inherit}
+.blog-content-title{margin-left: 10px;float:left;width:484px}
+.blog-content-title h1{font-size:20px;
+                       font-weight:500;
+                      line-height:70%;
+                      padding:0 0 0 0}
+.blog-text-excerpt{margin-left: 10px;font-size:13px;line-height:18px;padding:0;width:484px;float:left}
+.blog-middlespacer{background:#fff;border-bottom:1px solid #d5d5d5;clear:both;margin:0 0 10px 0;padding:0;width:650px}
+#blog-label-sorry{
+    text-align: center;
+    font-size:20px;
+    font-style: italic;
+    color : gray;
+    float : left;
+}
+.blog-form-search{
+	/* display: inline; inline display must not be set or will hide submit buttons in IE 5x mac */
+	width:inherit;      /* set width of form elements to auto-size, otherwise watch for wrap on resize */
+	float:right; /* set margin on left of form elements rather than right of
+                              label aligns textarea better in IE */
+        
+}
+.blog-textsearch{
+	/* display: inline; inline display must not be set or will hide submit buttons in IE 5x mac */
+	width:200px;      /* set width of form elements to auto-size, otherwise watch for wrap on resize */
+	margin-left:5px; /* set margin on left of form elements rather than right of
+                              label aligns textarea better in IE */
+}
+.blog-labelsearch{
+	display: block;  /* block float the labels to left column, set a width */ 
+	width: 100px; 
+	padding: 0; 
+	margin: 5px 5px 5px 0; /* set top margin same as form input - textarea etc. elements */
+	text-align: right; 
+}
+
+/*** CMS BLOG ***/
+.blogform {  /* set width in form, not fieldset (still takes up more room w/ fieldset width */
+  font:100% verdana,arial,sans-serif;
+  margin: 0;
+  padding: 0;
+  min-width: 500px;
+  max-width: 600px;
+  width: 560px; 
+}
+
+.blogform fieldset {
+  border-color: #000;
+  border-width: 1px;
+  border-style: solid;
+  padding: 10px;        /* padding in fieldset support spotty in IE */
+  margin: 0;
+}
+
+.blogform fieldset legend {
+	font-size:1.1em; /* bump up legend font size, not too large or it'll overwrite border on left */
+                       /* be careful with padding, it'll shift the nice offset on top of border  */
+}
+
+.blogform label { 
+	display: block;  /* block float the labels to left column, set a width */
+	float: left; 
+	width: 100px; 
+	padding: 0; 
+	margin: 5px 5px 5px 0; /* set top margin same as form input - textarea etc. elements */
+	text-align: right; 
+}
+
+.blogform fieldset label:first-letter { /* use first-letter pseudo-class to underline accesskey, note that */
+	text-decoration:underline;    /* Firefox 1.07 WIN and Explorer 5.2 Mac don't support first-letter */
+                                    /* pseudo-class on legend elements, but do support it on label elements */
+                                    /* we instead underline first letter on each label element and accesskey */
+                                    /* each input. doing only legends would  lessens cognitive load */
+                                   /* opera breaks after first letter underlined legends but not labels */
+}
+#blogformsubmit{
+	/* display: inline; inline display must not be set or will hide submit buttons in IE 5x mac */
+	width:100px;      /* set width of form elements to auto-size, otherwise watch for wrap on resize */
+	margin:0px; /* set margin on left of form elements rather than right of
+                              label aligns textarea better in IE */
+        text-align: center;
+        margin-left: 125px;
+        margin-top: 10px;
+}
+.blogform input[type="text"]{
+	/* display: inline; inline display must not be set or will hide submit buttons in IE 5x mac */
+	width:400px;      /* set width of form elements to auto-size, otherwise watch for wrap on resize */
+	margin:5px 5px 5px 10px; /* set margin on left of form elements rather than right of
+                              label aligns textarea better in IE */
+}
+.blogform input[type="file"]{
+	/* display: inline; inline display must not be set or will hide submit buttons in IE 5x mac */
+	width:400px;      /* set width of form elements to auto-size, otherwise watch for wrap on resize */
+	margin:5px 5px 5px 10px; /* set margin on left of form elements rather than right of
+                              label aligns textarea better in IE */
+}
+.blogformcheckbox{
+	/* display: inline; inline display must not be set or will hide submit buttons in IE 5x mac */
+	width:400px;      /* set width of form elements to auto-size, otherwise watch for wrap on resize */
+	margin:5px 5px 5px 10px; /* set margin on left of form elements rather than right of
+                              label aligns textarea better in IE */
+}
+.blogform textarea{
+	/* display: inline; inline display must not be set or will hide submit buttons in IE 5x mac */
+	width:400px;      /* set width of form elements to auto-size, otherwise watch for wrap on resize */
+	margin:5px 5px 5px 10px; /* set margin on left of form elements rather than right of
+                              label aligns textarea better in IE */
+}
+
+#formgroup-checkbox{
+    float : left;
+    width : 350px;
+}
+.blogcheckbox{
+    max-width: 50px;      /* set width of form elements to auto-size, otherwise watch for wrap on resize */
+    margin:5px 5px 5px 0;
+}
+.blogform input#reset {
+	margin-left:0px; /* set margin-left back to zero on reset button (set above) */
+}
+
+textarea { overflow: auto; }
+
+.blogform small {
+	display: block;
+	margin: 0 0 5px 160px; /* instructions/comments left margin set to align w/ right column inputs */
+	padding: 1px 3px;
+	font-size: 88%;
+}
+
+.blogform .required{font-weight:bold;} /* uses class instead of div, more efficient */
+
+
+
+/*** LOGIN ***/
+#login-con{
+    background : none;
+}
+#login-wrapper{
+    padding-left:300px;
+    padding-top:125px;
+    text-align: left;
+}
+#login-formwrapper{
+    padding-top:20px;
+    height : 300px; 
+}
+#login-form{
+    width: 300px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.login-label{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: Helvetica;
+    font-size: medium;
+    font-style: normal;
+    width : 80px;
+}
+
+.login-textbox{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: Helvetica;
+    font-size: medium;
+    font-style: normal;
+    width : 150px;
+}
+.login-rowform{
+    padding-top : 5px;
+    padding-bottom : 5px;
+}
+
+#msg {
+    display:none; 
+    position:absolute; 
+    z-index:200; 
+    background-image: url(../images/msg_arrow.gif);
+    background-position: left center;
+    background-repeat: no-repeat; 
+    padding-left:7px
+}
+#msgcontent {display:block; background:#f3e6e6; border:2px solid #924949; border-left:none; padding:5px; min-width:150px; max-width:250px}
+
+
+/** fb twitter **/
+#post-control-bar {
+    background-color: #F4F4F4;
+    border-bottom: 1px solid #DDDDDD;
+    box-shadow: 0 0 0 1px #FFFFFF inset;
+    height: 41px;
+    width:inherit;
+    z-index: 3;
+}
+.spread-bar {
+    height: 20px;
+    margin: 0 auto;
+    padding-left: 10px;
+}
+.twitter-share-button {
+    margin-left: 3px;
+    margin-top: 11px;
+    float:right;
+}
+.fb_edge_widget_with_comment {
+    margin-top: 10px;
+    float: left;
+}
+.fb_iframe_widget {
+    position: relative;
+    display: inline-block;
+    width:inherit;
+}
+.comment_section{
+    width: 650px;
+    text-align: left;
+    margin:0;
+    padding:0 22px 0 0;
+    border-right:1px solid #ddd;
+}
+
+/*** REGISTRASI ***/
+#registrasi-con{
+    background : none;
+}
+#registrasi-wrapper{
+    padding-left:300px;
+    padding-top:125px;
+    text-align: left;
+}
+#registrasi-formwrapper{
+    padding-top:20px;
+    height : 600px; 
+}
+#registrasi-form{
+    width: 500px;
+    text-align: left;
+    margin_left: auto;
+    margin_right: auto;
+}
+
+.registrasi-tabel{
+    width: 500 px;
+    vertical-align:center;
+    height:100 px;
+}
+
+#registrasi-td td{
+    vertical-align: center;
+}
+
+#registrasi-tr{
+}
+
+.registrasi-label{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: Helvetica;
+    font-size: medium;
+    font-style: normal;
+    width : 200px;
+    color:black;
+}
+
+.registrasi-textbox-invalid{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-family: Trebuchet MS;
+    font-size: medium;
+    font-style: normal;
+    width : 300px;
+    background-color:#FF698E;
+}
+
+.registrasi-textbox-valid{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-family: Trebuchet MS;
+    font-size: medium;
+    font-style: normal;
+    width : 300px;
+    background-color:#ADFF2F;
+}
+
+.registrasi-textbox{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-family: Helvetica;
+    font-size: medium;
+    font-style: normal;
+    width : 300px;
+}
+.registrasi-rowform{
+    padding-top : 5px;
+    padding-bottom : 5px;
+}
+
+#msg_reg {
+    display:none; 
+    position:absolute; 
+    z-index:200; 
+    background-image: url(../images/msg_arrow.gif);
+    background-position: left center;
+    background-repeat: no-repeat; 
+    padding-left:7px
+}
+#msgcontent_reg {display:block; background:#f3e6e6; border:2px solid #924949; border-left:none; padding:5px; min-width:150px; max-width:250px}
