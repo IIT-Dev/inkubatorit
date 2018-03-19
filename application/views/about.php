@@ -63,17 +63,17 @@
 			  			<tr>
 			  				<td style="width:200px;">Ketua Inkubator IT</td>
 			  				<td>:</td>
-			  				<td>Nicholas Posma Nasution (0877-2135-5305)</td>
+			  				<td>Radiyya Dwisaputra </td>
 			  			</tr>
 			  			<tr>
 			  				<td>CP Proyek</td>
 			  				<td>:</td>
-			  				<td>Gerry Kastogi (0857-7374-9169)</td>
+			  				<td>Wenny Yustalim (0812-8780-6682)</td>
 			  			</tr>
 			  			<tr>
 			  				<td>Marketing</td>
 			  				<td>:</td>
-			  				<td>Zulva Fachrina (0852-4692-8190)</td>
+			  				<td>Finiko Kasula Novenda </td>
 			  			</tr>
 			  			<tr>
 			  				<td>Email</td>
