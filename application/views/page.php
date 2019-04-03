@@ -68,7 +68,7 @@
   <![endif]-->
 
   <!-- Fav and touch icons -->
-  <link rel="shortcut icon" href="<?php echo base_url() ?>/img/favicon.png">
+  <link rel="shortcut icon" href="<?php echo base_url() ?>/img/logo-iit.png">
   
     <script type="text/javascript" src="<?php echo base_url() ?>/js/jquery.min.js"></script>
     <script type="text/javascript" src="<?php echo base_url() ?>/js/bootstrap.min.js"></script>
