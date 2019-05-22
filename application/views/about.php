@@ -68,7 +68,7 @@
 			  			<tr>
 			  				<td>CP Proyek</td>
 								<td>:</td>
-			  				<td>Cornelius Yan Mintareja (0896-5410-8308)</td>
+			  				<td>Cornelius Yan M (0896-5410-8308)</td>
 			  			</tr>
 			  			<tr>
 			  				<td>Marketing</td>
