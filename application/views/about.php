@@ -63,17 +63,17 @@
 			  			<tr>
 			  				<td style="width:200px;">Ketua Inkubator IT</td>
 			  				<td>:</td>
-			  				<td>Radiyya Dwisaputra </td>
+			  				<td>Wildan Dicky Alnatara </td>
 			  			</tr>
 			  			<tr>
 			  				<td>CP Proyek</td>
-			  				<td>:</td>
-			  				<td>Wenny Yustalim (0812-8780-6682)</td>
+								<td>:</td>
+			  				<td>Cornelius Yan Mintareja (0896-5410-8308)</td>
 			  			</tr>
 			  			<tr>
 			  				<td>Marketing</td>
 			  				<td>:</td>
-			  				<td>Finiko Kasula Novenda </td>
+			  				<td>Albert Sahala </td>
 			  			</tr>
 			  			<tr>
 			  				<td>Email</td>
